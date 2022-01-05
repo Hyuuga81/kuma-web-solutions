@@ -89,6 +89,258 @@ textarea {
 
 /* PUT ALL YOUR CODE IN HERE. EVEN MEDIA QUERIES. */
 
+/************************ GENERAL *****************************/
+html {
+  font-size: 16px;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header, footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/********************** HERO ************************************/
+
+header {
+  background: url(../img/code.jpg) center no-repeat;
+  background-size: cover;
+  color: #f2f2f2;
+}
+
+h1, p {
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 100px;
+}
+
+button {
+  background-color: #404040;
+  color: #f2f2f2;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 15px 25px;
+  border-radius: 0;
+}
+
+/************************ ABOUT ***************************/
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 50px 0;
+}
+
+.intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.intro p {
+  width: 100%;
+}
+
+/********************** SERVICES **************************/
+
+.services {
+  width: 100%;
+  background-color: #404040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 50px 0;
+}
+
+.services .container {
+  width: 80%;
+}
+
+.web-development, .mobile-applications, .tech-marketing {
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 30px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/************************** DIGITAL *************************/
+
+.digital {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 50px 0;
+}
+
+/************************* DATA *****************************/
+
+.data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact, .company {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 20px 0;
+}
+
+.contact .container, .company .container {
+  width: 80%;
+}
+
+.contact {
+  background-color: #00ace6;
+  color: #f2f2f2;
+}
+
+.company {
+  background-color: #404040;
+  color: #f2f2f2;
+}
+
+/********************** FOOTER ******************************/
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #000;
+  color: #f2f2f2;
+}
+
+a {
+  color: #00ace6;
+  text-decoration: none;
+}
+
+/******************** TABLET STYLES **************************/
+
+@media (min-width: 768px) {
+
+  /************************ ABOUT ***************************/
+  .intro {
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .about .container {
+    width: 80%;
+  }
+
+  .intro p {
+    width: 45%;
+  }
+
+  /************************ SERVICES ***************************/
+
+  .services .container {
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .web-development, .mobile-applications, .tech-marketing {
+    width: 30%;
+    text-align: center;
+  }
+
+  .services h3 {
+    width: 100%;
+  }
+  /************************ DIGITAL *****************************/
+
+  .digital .container {
+    width: 80%;
+  }
+
+  /*********************** DATA **************************/
+
+  .data {
+    align-items: stretch;
+  }
+
+  .contact, .company {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: row wrap;
+  }
+
+  .contact .container, .company .container {
+    width: 80%;
+    align-items: stretch;
+  }
+
+  /********************** FOOTER **************************/
+
+  footer p {
+    width: 50%;
+  }
+}
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
